@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>fenakhay docs</title>
+  <meta name="description" content="Documentation for fenakhay's libraries: kwikibot and Polyglossa.">
+  <link rel="canonical" href="https://docs.fenakhay.com/">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #1d1d22;
+      --muted: #5c5c66;
+      --card: #f6f5fb;
+      --line: #e4e1f2;
+      --accent: #7f52ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #16151c;
+        --fg: #ecebf3;
+        --muted: #a5a3b5;
+        --card: #1f1e28;
+        --line: #2f2d3d;
+        --accent: #9d7bff;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    main { max-width: 720px; margin: 0 auto; padding: 64px 16px; }
+    .bar {
+      height: 6px;
+      border-radius: 3px;
+      background: linear-gradient(90deg, #37bcfd, #7f52ff 58%, #c711e1);
+      width: 96px;
+      margin-bottom: 24px;
+    }
+    h1 { font-size: 2rem; margin: 0 0 8px; letter-spacing: -0.01em; }
+    p.lead { color: var(--muted); margin: 0 0 40px; }
+    ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 16px; }
+    a.card {
+      display: block;
+      padding: 20px 22px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      color: inherit;
+      text-decoration: none;
+    }
+    a.card:hover, a.card:focus-visible { border-color: var(--accent); outline: none; }
+    .name { font-weight: 650; font-size: 1.15rem; }
+    .name span { color: var(--accent); font-weight: 500; font-size: 0.9rem; margin-left: 8px; }
+    .what { color: var(--muted); margin-top: 4px; }
+    footer { margin-top: 48px; color: var(--muted); font-size: 0.9rem; }
+    footer a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="bar" aria-hidden="true"></div>
+    <h1>fenakhay docs</h1>
+    <p class="lead">Documentation for the libraries I maintain.</p>
+    <ul>
+      <li>
+        <a class="card" href="/kwikibot/">
+          <div class="name">kwikibot <span>docs.fenakhay.com/kwikibot</span></div>
+          <div class="what">A Kotlin Multiplatform library for MediaWiki bots and tools, on the JVM, native and npm.
+            Guides, examples in Kotlin and TypeScript, and the API reference.</div>
+        </a>
+      </li>
+      <li>
+        <a class="card" href="/polyglossa/">
+          <div class="name">Polyglossa <span>docs.fenakhay.com/polyglossa</span></div>
+          <div class="what">English Wiktionary's languages, families and scripts, for Kotlin, Swift, Python and SQL.
+            Guides with every example in Kotlin, Swift and Python, and the API reference.</div>
+        </a>
+      </li>
+    </ul>
+    <footer>By <a href="https://github.com/fenakhay">fenakhay</a>.</footer>
+  </main>
+</body>
+</html>
